@@ -21,7 +21,7 @@
     "start": "electron ./dist --enable-logging",
     "start:watch": "watch 'npm run lint && npm start'",
     "clean": "shx rm -Rf dist",
-    "presetup": "shx rm -Rf dist && cp -r app/ dist/ && shx mkdir dist/public/vendor",
+    "presetup": "npm run clean && cp -r app/ dist/ && shx mkdir dist/public/vendor",
     "setup": "npm run setup:materialize && npm run setup:jquery",
     "setup:materialize": "shx cp -r node_modules/materialize-css/dist dist/public/vendor/materialize",
     "presetup:jquery": "shx mkdir dist/public/vendor/jquery",
