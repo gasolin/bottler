@@ -1,13 +1,14 @@
 {
-  "name": "expretron",
-  "productName": "app name",
-  "description": "Express.js web server wrapped in Electron desktop runtime for any desktop application",
+  "name": "bottler",
+  "productName": "bottler",
+  "description": "Host Webby bot on your desktop",
   "version": "0.1.0",
   "author": "Fred Lin <gasolin+github@gmail.com>",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.15.1",
     "cookie-parser": "^1.4.1",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "webbybot": "^3.1.2"
   }
 }
