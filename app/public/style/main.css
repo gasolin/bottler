@@ -8,3 +8,22 @@ mark {
 .hidden {
   display: none;
 }
+
+body {
+  background-color: #e0f2f1;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.bot {
+  margin-right: 50px;
+}
+
+.me {
+  margin-left: 50px;
+}
