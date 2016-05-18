@@ -1,3 +1,4 @@
+'use strict';
 const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
@@ -8,7 +9,7 @@ const path = require('path');
 const PORT = normalizePort(process.env.PORT || '3000');
 
 function normalizePort(val) {
-  var port = parseInt(val, 10);
+  let port = parseInt(val, 10);
   if (isNaN(port)) {
     return val;
   }
@@ -40,7 +41,7 @@ function setupExpress(cb) {
     var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
     console.log('Listening on ' + bind);
     if (cb) {
-      cb();
+      cb(app);
     }
   });
 
