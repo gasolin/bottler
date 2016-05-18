@@ -31,8 +31,8 @@
     </div>
     <div class="container">
       <!-- <header></header> -->
-      <section class="main">
-        <div class="card-panel bot">
+      <section class="main box-body">
+        <!-- <div class="card-panel bot">
           Bot: Greetings my master, how may I help you?
           <div class="collection">
             <a href="#!" class="collection-item">1. Search</a>
@@ -42,13 +42,82 @@
         </div>
         <div class="card-panel light-blue lighten-4 indigo-text me">
           Me: g firefox
+        </div> -->
+        <!-- Conversations are loaded here -->
+          <div class="direct-chat-messages">
+            <!-- Message. Default to the left -->
+            <div class="direct-chat-msg">
+              <div class="direct-chat-info clearfix">
+                <span class="direct-chat-name pull-left">Bottler</span>
+                <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+              </div>
+              <!-- /.direct-chat-info -->
+              <img class="direct-chat-img" src="http://bootdey.com/img/Content/user_2.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+              <div class="direct-chat-text">
+                Greetings my master, how may I help you?
+              </div>
+              <!-- /.direct-chat-text -->
+            </div>
+            <!-- /.direct-chat-msg -->
+
+            <!-- Message to the right -->
+            <div class="direct-chat-msg right">
+              <div class="direct-chat-info clearfix">
+                <span class="direct-chat-name pull-right">Me</span>
+                <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+              </div>
+              <!-- /.direct-chat-info -->
+              <img class="direct-chat-img" src="http://bootdey.com/img/Content/user_1.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
+              <div class="direct-chat-text">
+                g firefox
+              </div>
+              <!-- /.direct-chat-text -->
+            </div>
+            <!-- /.direct-chat-msg -->
+          </div>
+          <!--/.direct-chat-messages-->
+
+          <!-- Contacts are loaded here -->
+          <div class="direct-chat-contacts">
+            <ul class="contacts-list">
+              <li>
+                <a href="#">
+                  <img class="contacts-list-img" src="http://bootdey.com/img/Content/user_1.jpg">
+
+                  <div class="contacts-list-info">
+                        <span class="contacts-list-name">
+                          Count Dracula
+                          <small class="contacts-list-date pull-right">2/28/2015</small>
+                        </span>
+                    <span class="contacts-list-msg">How have you been? I was...</span>
+                  </div>
+                  <!-- /.contacts-list-info -->
+                </a>
+              </li>
+              <!-- End Contact Item -->
+            </ul>
+            <!-- /.contatcts-list -->
+          </div>
+          <!-- /.direct-chat-pane -->
         </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          <form action="#" method="post">
+            <div class="input-group">
+              <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-success btn-flat">Send</button>
+                  </span>
+            </div>
+          </form>
+        </div>
+        <!-- /.box-footer-->
       </section>
-      <footer class="page-footer white">
+      <!-- <footer class="page-footer white">
         <div class="container">
           <input id="search" class="form-control" placeholder="Search or enter address" autofocus/>
         </div>
-      </footer>
+      </footer> -->
     </div>
 
     <!--Import jQuery before materialize.js-->
